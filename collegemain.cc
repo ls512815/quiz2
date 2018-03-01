@@ -1,3 +1,11 @@
+/** 
+* Name: Lydia Shiffler
+* Date: 3/1/17
+* Description: collegemain.cc file - commentation for quiz 2
+*/
+
+
+
 /******************************************************
 	This is the main for Project 3, which asks you to 
     build a container that holds a list of college courses.

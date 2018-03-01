@@ -1,3 +1,9 @@
+/** 
+* Name: Lydia Shiffler
+* Date: 3/1/17
+* Description: course.cc file - commentation for quiz2
+*/
+
 /***********************************************************************
 	The implementation file for course.h, which describes a college
 	course.
@@ -14,7 +20,7 @@ course::course(){
     hours = 0.0;
 }
 
-void course::input(std::istream& ins){
+void course::input(std::istream& ins){  ////allows you to input the course number, grade revieved, and credit hours 
     if(ins == cin){
 	cout<<"Course Number: ";
 	if(ins.peek() == '\n') ins.ignore();
@@ -39,7 +45,7 @@ void course::input(std::istream& ins){
     }
 }
 
-void course::output(std::ostream& outs)const{
+void course::output(std::ostream& outs)const{ ///outputs the course number, grade recieved, and credit hours
     if(outs == cout){
 	outs<<"Course Number:"<<course_number<<endl;
 	outs<<"Grade received:"<<grade<<endl;
@@ -53,7 +59,7 @@ void course::output(std::ostream& outs)const{
 }
 
 
-double course::get_number_grade()const{
+double course::get_number_grade()const{  /// gives GPA for the letter grade that you recieve
     if(grade == "A") return 4.0;
     if(grade == "A-") return 3.667;
     if(grade == "B+") return 3.333;

@@ -1,3 +1,9 @@
+/** 
+* Name: Lydia Shiffler 
+* Date: 3/1/17
+* Description: tarray.h file - documentation for quiz 2
+*/
+
 /*********************************************************************
 	This is a class to introduce you to the syntax of working with 
 	template classes. Notice that the type being stored is completely

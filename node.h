@@ -1,3 +1,9 @@
+/**
+* Name: Lydia Shiffler 
+* Date: 3/1/17
+* Description: node.h file - documentation for quiz 2
+*/
+
 /*************************************************************************
       This file is borrowed heavily from Main/Savitch "Data Structures and
       Other Object Using C++," Chapter 5. It features a node class that 

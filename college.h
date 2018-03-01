@@ -1,3 +1,10 @@
+/**
+* Name: Lydia Shiffler
+* Date:3/1/17
+* Description: College.h file - commentation for quiz 2
+*/
+
+
 //********************
 //Matthew Aberegg
 //Project 3

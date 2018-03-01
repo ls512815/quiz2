@@ -1,3 +1,11 @@
+/** 
+* Name: Lydia Shiffler 
+* Date: 3/1/17
+* Description: course.h file - documentation for quiz 2
+*/
+
+
+
 /***********************************************************************8
 	This class stores the three essential features of a completed 
 	college course: the course number, the grade received, and the 
