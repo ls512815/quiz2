@@ -1,29 +1,31 @@
-all: build archive doc
+DEP = college.h node.h course.h tarray.h 
+OBJ = college.cc collegemain.cc course.cc
+
+all: build doczip doc
 
 build: exec
 
-exec: collegemain.o  course.o college.o
-	g++ collegemain.o  course.o college.o -o exec
+exec: college.o collegemain.o course.o
+	g++ -o $@ $^
 
-main.o: collegemain.cc
+college.o: college.cc $(DEP)
+	g++ -c college.cc 
+
+collegemain.o: collegemain.cc $(DEP)
 	g++ -c collegemain.cc
 
-game.o: course.cc
+course.o: course.cc $(DEP)
 	g++ -c course.cc
 
-college.cc : college.cc college.h course.h node.h tarray.h
-	g++ -c college.cc
-
 clean: 
-	rm -rf *o exec archive1.tar
-	rm -rf ./Documentation/latex
-	rm -rf ./Documentation/html
-	
+	rm -f -r *.o core *.core exec college.tar.gz configgile latex html
 
-archive: collegemain.cc college.cc course.cc college.h course.h node.h tarray.h makefile
-	tar -cf archive.tar main.cc game.cc othello.cc game.h othello.h colors.h piece.h Makefile
+doczip: $(DEP) $(OBJ) makefile
+	tar -cf college.tar.gz $^
 
-doc: collegemain.cc college.cc course.cc college.h course.h node.h tarray.h makefile
-	doxygen
+doc: 
+	doxygen -g configfile 
+	doxygen configfile 
+
 
 	
